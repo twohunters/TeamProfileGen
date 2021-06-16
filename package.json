@@ -1,0 +1,22 @@
+{
+  "name": "teamprofilegen",
+  "version": "1.0.0",
+  "description": "Command-line application that generates an HTML page displaying information about a group of employees",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twohunters/TeamProfileGen.git"
+  },
+  "author": "Jason Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twohunters/TeamProfileGen/issues"
+  },
+  "homepage": "https://github.com/twohunters/TeamProfileGen#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
