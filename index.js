@@ -78,6 +78,7 @@ const userPrompt = () => {
                         const manager = new Manager(select.name, select.email, select.id, select.role, select.office)
 
                         team.push(manager);
+                        newEmployee()
                     })
             } else if (select.role === "Engineer") {
                 inquirer.prompt([
@@ -100,6 +101,7 @@ const userPrompt = () => {
                         const engineer = new Engineer(select.name, select.email, select.id, select.role, select.github)
 
                         team.push(engineer);
+                        newEmployee()
                     })
             } else if (select.role === "Intern") {
                 inquirer.prompt([
@@ -122,6 +124,7 @@ const userPrompt = () => {
                         const intern = new Intern(select.name, select.email, select.id, select.role, select.school);
 
                         team.push(intern);
+                        newEmployee()
                     })
             }
 
