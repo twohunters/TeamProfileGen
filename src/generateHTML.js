@@ -1,58 +1,58 @@
 const newTeam = team => {
     const newEngineer = engineer => {
         return `
-        <div class="card">
-        <div class="col-4 mt-4">
-            <div class="card h-100">
-                <div class="card-header">
-                    <h3>${engineer.name}, Engineer </h3><i class="fas fa-laptop-code"></i>
-                </div>
-                <div class ="card-body">
-                    <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-                    <p class="id">ID: ${engineer.id}</p>
-                    <p class="github">GitHub: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+        <article class="col">
+            <div class="card">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h3>${engineer.name}, Engineer </h3><i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class ="card-body">
+                        <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+                        <p class="id">ID: ${engineer.id}</p>
+                        <p class="github">GitHub: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </article>
         `
     };
 
     const newIntern = intern => {
         return `
-        <div class="card">
-        <div class="col-4 mt-4">
-            <div class="card h-100">
-                <div class="card-header">
-                    <h3>${intern.name}, Intern </h3><i class="fas fa-id-badge"></i>
-                </div>
-                <div class ="card-body">
-                    <p class="email">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
-                    <p class="id">ID: ${intern.id}</p>
-                    <p class="school">School: ${intern.school}</p>
+        <article class="col">
+            <div class="card">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h3>${intern.name}, Intern </h3><i class="fas fa-id-badge"></i>
+                    </div>
+                    <div class ="card-body">
+                        <p class="email">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
+                        <p class="id">ID: ${intern.id}</p>
+                        <p class="school">School: ${intern.school}</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </article>
         `
     };
 
     const newManager = manager => {
         return `
-        <div class="card">
-        <div class="col-4 mt-4">
-            <div class="card h-100">
-                <div class="card-header">
-                    <h3>${manager.name}, Manager </h3><i class="fas fa-user-tie"></i>
-                </div>
-                <div class ="card-body">
-                    <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
-                    <p class="id">ID: ${manager.id}</p>
-                    <p class="office">Office: # ${manager.office}</p>
+        <article class="col">
+            <div class="card">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h3>${manager.name}, Manager </h3><i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class ="card-body">
+                        <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
+                        <p class="id">ID: ${manager.id}</p>
+                        <p class="office">Office: # ${manager.office}</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </article>
         `
     };
 
