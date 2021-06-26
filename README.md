@@ -28,3 +28,8 @@ Type the following into your terminal or command line to copy this repository: `
 [Jest](https://www.npmjs.com/package/jest)
 
 [Inquirer](https://www.npmjs.com/package/inquirer)
+
+
+## License
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
