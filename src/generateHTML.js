@@ -68,7 +68,7 @@ const newTeam = team => {
         .join(""));
     html.push(team
         .filter(employee => employee.role() === "Manager")
-        .map(manager => newManager)
+        .map(manager => newManager(manager))
         .join(""));
     return html.join("");
 }

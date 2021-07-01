@@ -77,7 +77,7 @@ const userPrompt = () => {
 
                         const manager = new Manager(select.name, select.email, select.id, select.role, select.office)
 
-                        team.push(manager);
+                        employees.push(manager);
                         newEmployee()
                     })
             } else if (select.role === "Engineer") {
@@ -100,7 +100,7 @@ const userPrompt = () => {
 
                         const engineer = new Engineer(select.name, select.email, select.id, select.role, select.github)
 
-                        team.push(engineer);
+                        employees.push(engineer);
                         newEmployee()
                     })
             } else if (select.role === "Intern") {
@@ -123,7 +123,7 @@ const userPrompt = () => {
 
                         const intern = new Intern(select.name, select.email, select.id, select.role, select.school);
 
-                        team.push(intern);
+                        employees.push(intern);
                         newEmployee()
                     })
             }
@@ -138,7 +138,7 @@ const userPrompt = () => {
             }
 
             function newEmployee() {
-                inquirer.createPromptModule([
+                inquirer.prompt([
                     {
                         type: "confirm",
                         name: "newEmployee",
@@ -147,7 +147,7 @@ const userPrompt = () => {
                 ])
                 .then(res => {
                     if(res.newEmployee === true) {
-                        userPrompt();
+                        userPrompt(employees);
                     } else {
                         buildTeam();
                     }
