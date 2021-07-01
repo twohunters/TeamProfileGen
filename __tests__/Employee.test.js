@@ -40,3 +40,9 @@ test("Create employee id with getID()", () => {
     const employee = new Employee(id);
     expect(employee.getID()).toBe(id);
 });
+
+test("Get employee role with getRole()", () => {
+    const role = "Employee";
+    const employee = new Employee();
+    expect(employee.getRole().toBe(role));
+})
