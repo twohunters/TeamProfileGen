@@ -1,15 +1,19 @@
 const Engineer = require("../lib/Engineer");
 
-const engineer = new Engineer("Dave", 40, "dave@email.com", "gitDave");
-
 test("Create new engineer", () => {
-    expect(engineer.github).toEqual(expect.any(String));
+    const github = "github";
+    const engineer = new Engineer("Dave", 40, "dave@email.com", github);
+    expect(engineer.github).toBe(github);
 });
 
 test("Create engineer's GitHub", () => {
-    expect(engineer.github()).toEqual(expect.any(String));
+    const github = "github";
+    const engineer = new Engineer("Dave", 40, "dave@email.com", github);
+    expect(engineer.getGithub()).toBe(github);
 });
 
 test("Create engineer role", () => {
-    expect(engineer.role()).toEqual("Engineer");
+    const newEngineer = "Engineer";
+    const engineer = new Engineer("Dave", 40, "dave@email.com", "gitDave");
+    expect(engineer.getRole()).toBe(newEngineer);
 });

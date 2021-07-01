@@ -1,15 +1,19 @@
 const Manager = require("../lib/Manager");
 
-const manager = new Manager("Dave", 40, "dave@email.com", 1);
-
 test("Create new manager", () => {
-    expect(manager.office).toEqual(expect.any(Number));
+    const office = 123;
+    const manager = new Manager("Dave", 40, "dave@email.com", office);
+    expect(manager.office).toBe(office);
 });
 
 test("Create manager's office", () => {
-    expect(manager.office()).toEqual(expect.any(Number));
+    const office = 123;
+    const manager = new Manager("Dave", 40, "dave@email.com", office);
+    expect(manager.getOffice()).toBe(office);
 });
 
 test("Create manager role", () => {
-    expect(manager.role()).toEqual("Manager");
+    const newManager = "Manager";
+    const manager = new Manager("Dave", 40, "dave@email.com", "123");
+    expect(manager.getRole()).toBe(newManager);
 });
