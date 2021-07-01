@@ -14,6 +14,6 @@ test("Create manager's office", () => {
 
 test("Create manager role", () => {
     const newManager = "Manager";
-    const manager = new Manager("Dave", 40, "dave@email.com", "123");
+    const manager = new Manager("Dave", 40, "dave@email.com", 123);
     expect(manager.getRole()).toBe(newManager);
 });
