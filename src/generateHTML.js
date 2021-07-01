@@ -59,15 +59,15 @@ const newTeam = team => {
     const html = [];
 
     html.push(team
-        .filter(employee => employee.role() === "Engineer")
+        .filter(employee => employee.getRole() === "Engineer")
         .map(engineer => newEngineer(engineer))
         .join(""));
     html.push(team
-        .filter(employee => employee.role() === "Intern")
+        .filter(employee => employee.getRole() === "Intern")
         .map(intern => newIntern(intern))
         .join(""));
     html.push(team
-        .filter(employee => employee.role() === "Manager")
+        .filter(employee => employee.getRole() === "Manager")
         .map(manager => newManager(manager))
         .join(""));
     return html.join("");
