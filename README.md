@@ -17,6 +17,8 @@ Start the application by running `node index.js` and invoke tests with `npm test
 
 ![html](assets/images/test.png)
 
+View a demo [here](assets/images/demo.mp4).
+
 
 ## Technology
 
